@@ -14,7 +14,13 @@ const botaoJogarNovamente = document.querySelector(".novamente-btn");
 
 
 
+function mostraResultado() {
+caixaPerguntas.textContent = "Em 2049...";
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent = "";
+botaoJogarNovamente.addEventListener("click", jogaNovamente());
 
+}
 function jogaNovamente(){
     atual = 0;
     historiaFinal = "";
